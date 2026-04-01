@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  color: #2c3e50;
+  background-color: #fff;
+  border-bottom: 2px solid #3498db;
+}
+
+body > div {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+
+#search-main-container,
+#history-main-container,
+.right-container {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h3 {
+  font-size: 1rem;
+  color: #3498db;
+  margin-bottom: 12px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#city {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+#city:focus {
+  border-color: #3498db;
+}
+
+form button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+
+#Search-history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#Search-history button {
+  background: #eaf4fb;
+  color: #2980b9;
+  border: 1px solid #aed6f1;
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+#Search-history button:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.right-container {
+  flex: 1;
+  min-height: 220px;
+}
+
+
+#wheather-data > div {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+#wheather-data h4 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 680px) {
+  body > div {
+    flex-direction: column;
+  }
+
+  .left-container {
+    width: 100%;
+  }
+}
